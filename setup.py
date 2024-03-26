@@ -22,7 +22,7 @@ class MakeTheDoc(setuptools.Command):
     def run(self):
         """The command to run when users invoke python setup.py doc"""
         subprocess.run(
-            ['sphinx-build docsrc docs'], shell=True)
+            ['sphinx-build docsrc docs'], shell=False)
         
 # =================================
 # Get the version variable 
